@@ -20,8 +20,11 @@
     "@angular/router": "~12.1.1",
     "angularx-social-login": "^4.0.1",
     "ng2-ui-auth": "^10.0.1",
+    "ngx-apple-signin": "^10.0.2",
+    "ngx-social-login": "^6.0.1",
     "rxjs": "~6.6.0",
     "satellizer": "^0.15.5",
+    "scriptjs": "^2.5.9",
     "tslib": "^2.2.0",
     "twitter-lite": "^1.1.0",
     "zone.js": "~0.11.4"

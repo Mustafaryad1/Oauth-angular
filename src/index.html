@@ -6,6 +6,27 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <script>
+      let YOUR_REDIRECT_ID = "https://musatfaryad1.pythonanywhere.com/redirect"
+      function openAppleAuthWindow() {
+        window.open(
+          'https://appleid.apple.com/auth/authorize?' +
+            `client_id=com.ryad.client&` +
+            `redirect_uri=${encodeURIComponent(YOUR_REDIRECT_ID)}&` +
+            'response_type=code id_token&' +
+            'scope=name email&' +
+            'state=123&'+
+            'response_mode=form_post',
+          '_blank',
+        );
+      }
+      window.addEventListener("message",(data)=>{
+        if(data.data.includes("apple_token")){
+          console.log(data)
+        }
+      })
+    </script>
 </head>
 <body>
   <app-root></app-root>

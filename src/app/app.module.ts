@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TwitterCallbackComponent } from './twitter-callback/twitter-callback.component';
-import { Ng2UiAuthModule } from 'ng2-ui-auth';
+
 
 import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-login';
 import {GoogleLoginProvider} from 'angularx-social-login'
+import { AppleSigninModule } from 'ngx-apple-signin'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {GoogleLoginProvider} from 'angularx-social-login'
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    SocialLoginModule
+    SocialLoginModule,
+    AppleSigninModule
 
   ],
   providers: [{

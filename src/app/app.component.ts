@@ -12,6 +12,10 @@ import { HttpClient } from '@angular/common/http';
   styles: []
 })
 export class AppComponent {
+  state = "ok";
+  apple_redirect= "https://example-app.com/redirect";
+  scope = "name email";
+  client_id= "com.ryad";
   isSignedin: boolean | undefined;
   user: SocialUser | undefined;
   x:string= 'hello';
@@ -46,6 +50,9 @@ export class AppComponent {
       }
     )
   }
+
+
+
 
 }
 
